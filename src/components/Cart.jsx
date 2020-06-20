@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import './App.css';
-import { GlobalContext } from "./GlobalContext";
+import '../App.css';
+import { GlobalContext } from "../context/GlobalContext";
 
 function Cart() {
 

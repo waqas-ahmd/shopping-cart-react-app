@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Nav from './Nav';
-import Home from './Home';
-import Products from './Products';
-import Cart from './Cart';
-import { GlobalProvider } from './GlobalContext';
+import Nav from './components/Nav';
+import Home from './components/Home';
+import Products from './components/Products';
+import Cart from './components/Cart';
+import { GlobalProvider } from './context/GlobalContext';
 
 function App() {
   return (

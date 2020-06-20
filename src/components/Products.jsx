@@ -1,8 +1,8 @@
 import React, { useEffect, useContext} from 'react';
-import './App.css';
+import '../App.css';
 import { csv } from 'd3';
-import data from './assets/products.csv';
-import { GlobalContext } from './GlobalContext';
+import data from '../assets/products.csv';
+import { GlobalContext } from '../context/GlobalContext';
 import { useState } from 'react';
 
 function Products() {
