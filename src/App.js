@@ -9,7 +9,6 @@ import { GlobalProvider } from './GlobalContext';
 
 function App() {
   return (
-    
       <Router>
         <GlobalProvider>
         <div className="App">

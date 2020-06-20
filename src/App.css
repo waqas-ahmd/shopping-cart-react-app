@@ -82,6 +82,7 @@
   margin-top: 64px;
 }
 
+
 .cart-main{
   background-color: rgb(219, 219, 219);
   padding: 10px;
@@ -163,12 +164,25 @@
 
 .home-main{
   margin-top: 64px;
+  height: 92vh;
+  padding-top: 50px;
+  background-image: url("./assets/homeBG.png");
+  background-position: center;
+  background-color: black;
+  color: white;
+}
+
+.home-btn:hover{
+  color: white !important;
+  text-decoration: none !important;
 }
 
 .disclaimer{
   margin: auto;
   width: 350px;
   text-align: justify;
+  font-size: small;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 @media screen and (max-width: 600px){

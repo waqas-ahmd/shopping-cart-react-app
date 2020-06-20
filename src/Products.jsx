@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext} from 'react';
 import './App.css';
 import { csv } from 'd3';
 import data from './assets/products.csv';
@@ -15,7 +15,7 @@ function Products() {
                 product: d.Product,
                 cost: +d.Cost,
                 qty: +d.Quantity,
-                img: d.Image,
+                img: d['Image'],
                 hovImg: d['Hover Image'],
                 color: d.Color,
                 catg: d.Category
@@ -28,7 +28,7 @@ function Products() {
             }
         });// eslint-disable-next-line
     }, [])
-
+      
     const addCartItem = (item) => {
         if (item.qty > 0) {
             AddItem(item)
@@ -44,13 +44,18 @@ function Products() {
                     <select class="form-control" id="sel1" value={category} onChange={(e) => setCategory(e.target.value)}>
                         <option>Formal</option>
                         <option>Casual</option>
+                        <option>Peshawari</option>
+                        <option>Sports</option>
+                        <option>Chappal</option>
                     </select>
                 </div>
             </div>
             <div className="row">
                 {(stockItems.filter(a=> a.catg === category)).map(item => <div key={"product00" + item.id} className="col-lg-3 col-md-6 col-12">
                     <div className="card product-card">
-                        <img className="card-img-top product-image" url={item.img} dataSrc={item.img} onMouseOver={e => (e.currentTarget.src = item.hovImg)} onMouseOut={e => (e.currentTarget.src = item.img)} alt="Card" />
+                        
+                        <img className="card-img-top product-image" src={"http://"+item.img+"_350x.jpg"} alt="Shoe Card" />
+                        
                         <div className="card-body product-card-body" >
                             <div style={{ display: 'flex', justifyContent: 'space-between', verticalAlign: 'center' }}>
                                 <p className="card-title product-text">{item.product}</p>

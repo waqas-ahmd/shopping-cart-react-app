@@ -26,7 +26,7 @@ function Nav() {
             <AppBar position="static" className="Nav-Bar">
                 <Toolbar className="Tool-Bar">
                     <Typography variant="h6" className={classes.title}>
-                    <Link className="navlink-item" to="/">Home</Link>
+                    <Link className="navlink-item home-btn" to="/">Home</Link>
                     </Typography>
                     <Link className="navlink-item" to="/products"><Button className="nav-buttons" color="inherit"><AppsIcon/>Products</Button></Link>
                     <Link className="navlink-item" to="/cart"><Button className="nav-buttons" color="inherit"><ShoppingCartIcon/>Cart</Button></Link>

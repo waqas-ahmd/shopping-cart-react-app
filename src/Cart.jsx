@@ -21,7 +21,7 @@ function Cart() {
   <span className="total-cost">Total Cost: <span style={{fontWeight:'bold'}}>{ "$" + cartItems.reduce((a, b) => a + (b['cost'] || 0), 0)}</span></span>
       </div>
       {cartItemsUnique.map(cItem => <div className="cart-item">
-        <img src={cItem.item.img} alt="product" className="cart-item-image" />
+        <img src={"http://"+cItem.item.img+"_350x.jpg"} alt="product" className="cart-item-image" />
         <div className="cart-item-body">
           <div className="cart-item-title">{cItem.item.product}</div>
           <div className="card-body-upper" >
