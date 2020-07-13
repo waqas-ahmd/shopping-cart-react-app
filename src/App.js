@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Products from './components/Products';
@@ -13,11 +13,11 @@ function App() {
         <GlobalProvider>
         <div className="App">
           <Nav />
-          <Switch>
+          <Routes>
             <Route path="/" exact><Home /></Route>
             <Route path="/products"><Products /></Route>
             <Route path="/cart"><Cart /></Route>
-          </Switch>
+          </Routes>
         </div>
         </GlobalProvider>
       </Router>
