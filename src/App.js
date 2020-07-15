@@ -9,7 +9,7 @@ import { GlobalProvider } from './context/GlobalContext';
 
 function App() {
   return (
-      <Router>
+      
         <GlobalProvider>
         <div className="App">
           <Nav />
@@ -20,7 +20,7 @@ function App() {
           </Routes>
         </div>
         </GlobalProvider>
-      </Router>
+      
     
   );
 }
