@@ -14,9 +14,9 @@ function App() {
         <div className="App">
           <Nav />
           <Routes>
-            <Route path="/" exact><Home /></Route>
-            <Route path="/products"><Products /></Route>
-            <Route path="/cart"><Cart /></Route>
+            <Route path="/" element={<Home/>} />
+            <Route path="/products" element={<Products/>}/>
+            <Route path="/cart" element={<Cart/>}/>
           </Routes>
         </div>
         </GlobalProvider>
